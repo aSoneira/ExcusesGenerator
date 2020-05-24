@@ -5,7 +5,7 @@ var what = ['mis deberes', 'el móvil', 'las llaves', 'los cables'];
 var when = ['antes de clase.', 'justo ahora.', 'mientras hacia el pino.', 'en la hora de la comida.','mientras hacia petit point'];
 
 
-function Excusa() {
+function excusa() {
     var quien = who[Math.floor(Math.random() * (who.length))];
     var accion = action[Math.floor(Math.random() * (action.length))];
     var que = what[Math.floor(Math.random() * (what.length))];

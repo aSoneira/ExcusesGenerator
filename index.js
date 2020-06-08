@@ -6,16 +6,20 @@ var when = ['antes de clase.', 'justo ahora.', 'mientras hacia el pino.', 'en la
 
 
 function excusa() {
-    var quien = who[Math.floor(Math.random() * (who.length))];
-    var accion = action[Math.floor(Math.random() * (action.length))];
-    var que = what[Math.floor(Math.random() * (what.length))];
-    var cuando = when[Math.floor(Math.random() * (when.length))];
+    let quien = randomExcu(who);
+    let accion = randomExcu(action);
+    let que = randomExcu(what);
+    let cuando = randomExcu(when);
     
     //return quien +" "+ accion + " " + que + " " + cuando;
     return quien.concat(" ", accion, " ", que, " ", cuando)
 
     //return console.log(quien +" "+ accion + " " + que + " " + cuando);
    
+};
+
+function randomExcu(excu){
+    return excu[Math.floor(Math.random() * (excu.length))]
 };
 
  function onLoad(){
